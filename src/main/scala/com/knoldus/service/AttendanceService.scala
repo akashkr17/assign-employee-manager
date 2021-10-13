@@ -10,7 +10,7 @@ object AttendanceService {
   /*
    * Method to use the provided time for employee attendance
    */
-  def getEmployeeAttendance(emp: EmployeeRequest,
+  def setEmployeeAttendance(emp: EmployeeRequest,
                             startTime: String,
                             endTime: String): Option[(String, String)] = {
     try {
@@ -30,7 +30,7 @@ object AttendanceService {
   /*
    * Method to use the default time for employee attendence
    */
-  def getEmployeeAttendance(emp: EmployeeRequest): Option[(String, String)] = {
+  def setEmployeeAttendance(emp: EmployeeRequest): Option[(String, String)] = {
     try {
       val startDateTime = getTime("09:45 AM")
       val endDateTime = getTime("06:45 PM")

@@ -17,9 +17,9 @@ object Main extends App {
   println(EmployeeService.setEmp(president))
   EmployeeService.setEmp(employee1)
 
-  AttendanceService.getEmployeeAttendance(consultant, "09:50 AM", "06:50 PM")
-  AttendanceService.getEmployeeAttendance(manager)
-  AttendanceService.getEmployeeAttendance(srManager, "09:50 AM", "06:50 PM")
-  AttendanceService.getEmployeeAttendance(president)
+  AttendanceService.setEmployeeAttendance(consultant, "09:50 AM", "06:50 PM")
+  AttendanceService.setEmployeeAttendance(manager)
+  AttendanceService.setEmployeeAttendance(srManager, "09:50 AM", "06:50 PM")
+  AttendanceService.setEmployeeAttendance(president)
 
 }
